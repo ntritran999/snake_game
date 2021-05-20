@@ -51,7 +51,7 @@ def main():
         if head[0]+10 in [0, sw] or head[1] in [0, sh] or snake[0] in snake[1:]:
             end()
         for part in snake:
-            pygame.draw.rect(scr, (255,255,0), (part[0], part[1],10, 10))
+            pygame.draw.rect(scr, (255,255,255), (part[0], part[1],10, 10))
 
         if direction == 'up':
             head[1] -= 10 
