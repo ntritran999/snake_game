@@ -66,7 +66,7 @@ def main():
 
         pygame.draw.rect(scr, (255,0,0), (food[0], food[1], 10, 10))
 
-        score_font = font.render(f'{score}' , True , (255,255,255))
+        score_font = font.render(f'Score:{score}' , True , (255,255,255))
         font_pos = score_font.get_rect(center=(sw//2-40 , 30))
         scr.blit(score_font , font_pos)
 
